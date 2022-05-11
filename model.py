@@ -28,10 +28,10 @@ class Igra:
         return len(self.napacne_crke())
 
     def zmaga(self):
-        return len(set(self.geslo)) == len(self.pravilne_crke())
+        return all([crka in self.crke for crka in self.geslo])
 
     def poraz(self):
-        return self.stevilo_napak() > STEVILO_DOVOLJENIH_NAPAK
+        return self.stevilo_napak() >= STEVILO_DOVOLJENIH_NAPAK
 
     def pravilni_del_gesla(self):
         niz = ''
