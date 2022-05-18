@@ -1,15 +1,9 @@
 % import model
-
-<!DOCTYPE html>
-<html>
-
-<body>
-
-  <h1>Vislice</h1>
+% rebase("base.tpl")
 
   <h2>{{igra.pravilni_del_gesla()}}</h2>
 
-Nepravilni ugibi: <b>{{igra.nepravilni_ugibi()}}<b>
+Nepravilni ugibi: <b>{{igra.nepravilni_ugibi()}}<b> <br>
 
   <img src="/img/{{igra.stevilo_napak()}}.jpg" alt="obesanje">
 
@@ -34,7 +28,3 @@ Nepravilni ugibi: <b>{{igra.nepravilni_ugibi()}}<b>
   </form>
 
 %end
-
-</body>
-
-</html>
